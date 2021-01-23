@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Novo Projeto - ManagePRO</title>
-        <link rel="stylesheet" href="assets/css/">
+        <!-- <link rel="stylesheet" href="assets/css/"> -->
     </head>
     <body>
         <header>
@@ -18,20 +18,20 @@
         </header>
         <div>
             <div>
-                <form method="POST" action="">
+                <form method="POST" action="actions/cadastrar_action.php">
                     <label>
                         Nome do projeto:<br>
-                        <input type="text" name="nameProj">
+                        <input type="text" name="name">
                     </label><br><br>
 
                     <label>
                         Data de inicio:<br>
-                        <input type="text" name="startDate">
+                        <input type="date" name="startDate" id="startDate">
                     </label><br><br>
 
                     <label>
                         Data de término:<br>
-                        <input type="text" name="endDate">
+                        <input type="date" name="endDate" id="endDate">
                     </label><br><br>
 
                     <label>
