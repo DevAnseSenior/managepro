@@ -6,6 +6,7 @@
         <title>Novo Projeto - ManagePRO</title>
         <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="../assets/css/default.css">
+        <link rel="stylesheet" href="../assets/css/form.css">
     </head>
     <body>
         <div class="container">
@@ -19,45 +20,50 @@
                     </ul>
                 </nav>
             </header>
-            <div>
-                <div>
+            <div class="main">
+                <div class="fspace">
                     <form method="POST" action="actions/cadastrar_action.php">
-                        <label>
-                            Nome do projeto:<br>
-                            <input type="text" name="name">
-                        </label><br><br>
+                        <div class="form-group">
+                            <label for="name">Nome do projeto:</label>
+                            <input class="form-control" id="name" type="text" name="name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="startDate">Data de inicio:</label>
+                            <input class="form-control" id="startDate" type="date" name="startDate">
+                        </div>
 
-                        <label>
-                            Data de inicio:<br>
-                            <input type="date" name="startDate" id="startDate">
-                        </label><br><br>
+                        <div class="form-group">
+                            <label for="endDate">Data de término:</label>
+                            <input class="form-control" id="endDate" type="date" name="endDate" >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="valueP">Valor do projeto:</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text" id="btnGroupAddon">R$</div>
+                                </div>
+                                <input class="form-control" id="valueP" type="number" name="valueProj">
+                            </div>
+                        </div>
 
-                        <label>
-                            Data de término:<br>
-                            <input type="date" name="endDate" id="endDate">
-                        </label><br><br>
-
-                        <label>
-                            Valor do projeto:<br>R$ 
-                            <input type="number" name="valueProj">
-                        </label><br><br>
-
-                        <label>
-                            Risco:<br>
-                            <select name="risk">
+                        <div class="form-group">
+                        <label for="risk">Risco:</label>
+                            <select class="form-control" id="risk" name="risk">
                                 <option value=""></option>
                                 <option value="0">Baixo</option>
                                 <option value="1">Mediano</option>
                                 <option value="2">Alto</option>
                             </select>
-                        </label><br><br>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contributors">Membros do projeto:</label>
+                            <textarea class="form-control" id="contributors" name="contributors" cols="30" rows="5"></textarea>
+                        </div>
 
-                        <label>
-                            Membros do projeto:<br>
-                            <textarea name="contributors" cols="30" rows="5"></textarea>
-                        </label><br><br>
-
-                        <input type="submit" value="Cadastrar">
+                        <input class="btn btn-primary form-control" type="submit" value="Cadastrar">
                     </form>
                 </div>
             </div>

@@ -28,7 +28,7 @@
         <title>Editar Projeto - ManagePRO</title>
         <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="../assets/css/default.css">
-        <link rel="stylesheet" href="../assets/css/edit.css">
+        <link rel="stylesheet" href="../assets/css/form.css">
     </head>
     <body>
         <div class="container">
