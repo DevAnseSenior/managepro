@@ -64,12 +64,17 @@
                         
                         <div class="form-group">
                             <label for="valueP">Valor do projeto:</label>
-                            R$<input class="form-control" id="valueP" type="number" name="valueProj" value="<?=$info['valueP']?>">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text" id="btnGroupAddon">R$</div>
+                                </div>
+                                <input class="form-control" id="valueP" type="number" name="valueProj" value="<?=$info['valueP']?>">
+                            </div>
                         </div>
 
                         <div class="form-group">
                         <label for="risk">Risco (0 - Baixo, 1 - Mediano, 2 - Alto):</label>
-                            <input class="form-control" id="risk" type="text" name="risk" value="<?=$info['risk']; ?>">
+                            <input class="form-control" id="risk" type="number" min="0" max="2" name="risk" value="<?=$info['risk']; ?>">
                         </div>
 
                         <div class="form-group">
