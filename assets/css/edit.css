@@ -1,0 +1,14 @@
+input[type=submit] {
+    margin-top: 10px;
+}
+.main {
+    display: flex;
+    justify-content: center;
+}
+.fspace {
+    width: 500px;
+    margin: 10px 0px;
+    padding: 20px 20px;
+    border-radius: 10px; 
+    background-color: #FFF;
+}

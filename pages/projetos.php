@@ -30,7 +30,7 @@
                     </ul>
                 </nav>
             </header>
-            <div>
+            <div class="main">
                 <div>
                     <a class="btn btn-primary add" href="cadastrar.php">Novo Projeto</a>  
                 </div>

@@ -28,6 +28,7 @@
         <title>Editar Projeto - ManagePRO</title>
         <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="../assets/css/default.css">
+        <link rel="stylesheet" href="../assets/css/edit.css">
     </head>
     <body>
         <div class="container">
@@ -41,42 +42,42 @@
                     </ul>
                 </nav>
             </header>
-            <div>
-                <div>
+            <div class="main">
+                <div class="fspace">
                     <form method="POST" action="actions/editar_action.php">
                         <input type="hidden" name="id" value="<?=$info['id']; ?>">
                         
-                        <label>
-                            Nome do projeto:<br>
-                            <input type="text" name="name" value="<?=$info['name']; ?>">
-                        </label><br><br>
+                        <div class="form-group">
+                            <label for="name">Nome do projeto:</label>
+                            <input class="form-control" id="name" type="text" name="name" value="<?=$info['name']; ?>">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="startDate">Data de inicio:</label>
+                            <input class="form-control" id="startDate" type="date" name="startDate" value="<?=$info['sttDate']; ?>">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="endDate">Data de término:</label>
+                            <input class="form-control" id="endDate" type="date" name="endDate" value="<?=$info['endDate']; ?>">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="valueP">Valor do projeto:</label>
+                            R$<input class="form-control" id="valueP" type="number" name="valueProj" value="<?=$info['valueP']?>">
+                        </div>
 
-                        <label>
-                            Data de inicio:<br>
-                            <input type="date" name="startDate" id="startDate" value="<?=$info['sttDate']; ?>">
-                        </label><br><br>
+                        <div class="form-group">
+                        <label for="risk">Risco (0 - Baixo, 1 - Mediano, 2 - Alto):</label>
+                            <input class="form-control" id="risk" type="text" name="risk" value="<?=$info['risk']; ?>">
+                        </div>
 
-                        <label>
-                            Data de término:<br>
-                            <input type="date" name="endDate" id="endDate" value="<?=$info['endDate']; ?>">
-                        </label><br><br>
+                        <div class="form-group">
+                            <label form="contributors">Membros do projeto:</label>
+                            <textarea class="form-control" id="contributors" name="contributors" cols="30" rows="5"><?=$info['contributors']; ?></textarea>
+                        </div>
 
-                        <label>
-                            Valor do projeto:<br>R$
-                            <input type="number" name="valueProj" value="<?=$info['valueP']?>">
-                        </label><br><br>
-
-                        <label>
-                            Risco (0 - Baixo, 1 - Mediano, 2 - Alto):<br>
-                            <input type="text" name="risk" value="<?=$info['risk']; ?>">
-                        </label><br><br>
-
-                        <label>
-                            Membros do projeto:<br>
-                            <textarea name="contributors" cols="30" rows="5"><?=$info['contributors']; ?></textarea>
-                        </label><br><br>
-
-                        <input type="submit" value="Salvar">
+                        <input class="btn btn-primary form-control" type="submit" value="Salvar">
                     </form>
                 </div>
             </div>
