@@ -26,7 +26,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Editar Projeto - ManagePRO</title>
-        <!-- <link rel="stylesheet" href="assets/css/"> -->
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     </head>
     <body>
         <header>
@@ -64,7 +64,7 @@
                     </label><br><br>
 
                     <label>
-                        Risco:<br>
+                        Risco (0 - Baixo, 1 - Mediano, 2 - Alto):<br>
                         <input type="text" name="risk" value="<?=$info['risk']; ?>">
                     </label><br><br>
 
@@ -77,5 +77,15 @@
                 </form>
             </div>
         </div>
+        <footer>
+            <div>
+                <div>
+                    Todos os direitos reservados©Lorem Ipsum Inc.
+                </div>
+            </div>
+        </footer>
+
+        <script src="../assets/js/jquery-3.5.1.min.js"></script>
+        <script src="../assets/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
