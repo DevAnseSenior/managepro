@@ -16,6 +16,7 @@
         <title>Projetos - ManagePRO</title>
         <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="../assets/css/default.css">
+        <link rel="stylesheet" href="../assets/css/projects.css">
     </head>
     <body>
         <div class="container">
@@ -31,13 +32,13 @@
             </header>
             <div>
                 <div>
-                    <a href="cadastrar.php">Novo Projeto</a>  
+                    <a class="btn btn-primary add" href="cadastrar.php">Novo Projeto</a>  
                 </div>
                 <div>
-                    <table border="1" width="100%">
+                    <table class="table table-bordered table-striped" width="100%">
                         <thead>
                             <tr>
-                                <th>ID</th>
+                                <th>#</th>
                                 <th>Nome</th>
                                 <th>Data Inicial</th>
                                 <th>Data Final</th>
@@ -92,9 +93,9 @@
                                 </td>
                                 <td><?=$projeto['contributors']; ?></td>
                                 <td>
-                                    <a href="#">[Simular Investimento]</a>
-                                    <a href="editar.php?id=<?=$projeto['id']; ?>">[Editar]</a>
-                                    <a href="actions/excluir_action.php?id=<?=$projeto['id']; ?>" onclick="return confirm('Tem certeza que deseja excluir?')">[Excluir]</a>
+                                    <a class="btn btn-outline-primary" href="#">Simular Investimento</a>
+                                    <a class="btn btn-outline-warning" href="editar.php?id=<?=$projeto['id']; ?>">Editar</a>
+                                    <a class="btn btn-outline-danger" href="actions/excluir_action.php?id=<?=$projeto['id']; ?>" onclick="return confirm('Tem certeza que deseja excluir?')">Excluir</a>
                                 </td>
                             </tr>
                             <?php endforeach; ?>
