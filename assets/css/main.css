@@ -1,0 +1,20 @@
+.front {
+    height: 85vh;
+    background-image: url('../../media/img/pastimes-travellers-blog.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.front .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+.front .container h1,
+.front .container p {
+    color: #FFF;
+    text-shadow: 3px 3px 10px #000;
+}
