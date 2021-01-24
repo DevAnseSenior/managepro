@@ -10,10 +10,9 @@
         <header>
             <div>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="pages/projetos.php">Projetos</a></li>
-                    <li><a href="pages/sobre.php">Sobre</a></li>
-                </ul>
+                    <li><a href="../index.php">Home</a></li>
+                    <li><a href="projetos.php">Projetos</a></li>
+                    <li><a href="#">Sobre</a></li>
             </div>
         </header>
     </body>

@@ -25,7 +25,7 @@
             $sql->bindValue(':contributors', $contributors);
             $sql->execute();
 
-            header("Location:  ../projetos.php");
+            header("Location:../projetos.php");
             exit;
         } else {
             header("Location:../projetos.php");
