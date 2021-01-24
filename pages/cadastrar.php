@@ -35,17 +35,17 @@
                     </label><br><br>
 
                     <label>
-                        Valor do projeto:<br>
-                        <input type="text" name="valueProj">
+                        Valor do projeto:<br>R$ 
+                        <input type="number" name="valueProj">
                     </label><br><br>
 
                     <label>
                         Risco:<br>
                         <select name="risk">
                             <option value=""></option>
-                            <option value="0">Pequeno</option>
+                            <option value="0">Baixo</option>
                             <option value="1">Mediano</option>
-                            <option value="2">Grande</option>
+                            <option value="2">Alto</option>
                         </select>
                     </label><br><br>
 

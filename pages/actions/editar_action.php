@@ -27,3 +27,9 @@
         exit;
     }
 ?>
+
+<html>
+    <?php
+        echo '$vl';
+    ?>
+</html>

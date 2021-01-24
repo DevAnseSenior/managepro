@@ -59,8 +59,8 @@
                     </label><br><br>
 
                     <label>
-                        Valor do projeto:<br>
-                        <input type="text" name="valueProj" value="<?=$info['valueP']; ?>">
+                        Valor do projeto:<br>R$
+                        <input type="number" name="valueProj" value="<?=$info['valueP']?>">
                     </label><br><br>
 
                     <label>

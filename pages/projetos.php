@@ -46,13 +46,47 @@
                     </thead>
                     <tbody>
                         <?php foreach($lista as $projeto): ?>
+                        
                         <tr>
                             <td><?=$projeto['id']; ?></td>
                             <td><?=$projeto['name']; ?></td>
-                            <td><?=$projeto['sttDate']; ?></td>
-                            <td><?=$projeto['endDate']; ?></td>
-                            <td><?=$projeto['valueP']; ?></td>
-                            <td><?=$projeto['risk']; ?></td>
+                            <td>
+                                <?php
+                                    $data = $projeto['sttDate'];
+                                    $dataI = implode("/", array_reverse(explode("-", $data)));
+                                    echo $dataI;
+                                ?>
+                            </td>
+                            <td>
+                                <?php
+                                    $data = $projeto['endDate'];
+                                    $dataF = implode("/", array_reverse(explode("-", $data)));
+                                    echo $dataF;
+                                ?>
+                            </td>
+                            <td>
+                                <?php
+                                    $valor = number_format($projeto['valueP'], 2, ',', '.');
+                                    echo "R$ $valor";
+                                ?>
+                            </td>
+                            <td>
+                                <?php
+                                    $risco = $projeto['risk'];
+                                    
+                                    switch($risco) {
+                                        case 0:
+                                            echo 'Baixo';
+                                            break;
+                                        case 1:
+                                            echo 'Mediano';
+                                            break;
+                                        case 2:
+                                            echo 'Alto';
+                                            break;
+                                    }
+                                ?>
+                            </td>
                             <td><?=$projeto['contributors']; ?></td>
                             <td>
                                 <a href="#">[Simular Investimento]</a>
