@@ -57,7 +57,7 @@
                             <td>
                                 <a href="#">[Simular Investimento]</a>
                                 <a href="editar.php?id=<?=$projeto['id']; ?>">[Editar]</a>
-                                <a href="excluir.php?id=<?=$projeto['id']; ?>" onclick="return confirm('Tem certeza que deseja excluir?')">[Excluir]</a>
+                                <a href="actions/excluir_action.php?id=<?=$projeto['id']; ?>" onclick="return confirm('Tem certeza que deseja excluir?')">[Excluir]</a>
                             </td>
                         </tr>
                         <?php endforeach; ?>
