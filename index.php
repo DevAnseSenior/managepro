@@ -14,7 +14,7 @@
                 <div class="logo"><a href="">ManagePRO</a></div>
                 <nav>
                     <ul class="nav">
-                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="pages/projetos.php">Projetos</a></li>
                         <li class="nav-item"><a class="nav-link" href="pages/sobre.php">Sobre</a></li>
                     </ul>
