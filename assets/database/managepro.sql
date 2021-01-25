@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 25/01/2021 às 01:34
+-- Tempo de geração: 25/01/2021 às 01:56
 -- Versão do servidor: 10.4.14-MariaDB
 -- Versão do PHP: 7.4.10
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `managepro`
 --
+CREATE DATABASE IF NOT EXISTS `managepro` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `managepro`;
 
 -- --------------------------------------------------------
 
