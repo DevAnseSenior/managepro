@@ -68,7 +68,7 @@
                                         echo $dataF;
                                     ?>
                                 </td>
-                                <td>
+                                <td id="val_projeto">
                                     <?php
                                         $valor = number_format($projeto['valueP'], 2, ',', '.');
                                         echo "R$ $valor";
@@ -93,7 +93,7 @@
                                 </td>
                                 <td><?=$projeto['contributors']; ?></td>
                                 <td>
-                                    <a class="btn btn-outline-primary" href="#">Simular Investimento</a>
+                                    <a class="btn btn-outline-primary" onclick="calcularRisco(<?=$projeto['valueP'];?>, <?=$projeto['risk'];?>)">Simular Investimento</a>
                                     <a class="btn btn-outline-warning" href="editar.php?id=<?=$projeto['id']; ?>">Editar</a>
                                     <a class="btn btn-outline-danger" href="actions/excluir_action.php?id=<?=$projeto['id']; ?>" onclick="return confirm('Tem certeza que deseja excluir?')">Excluir</a>
                                 </td>
@@ -114,5 +114,6 @@
 
         <script src="../assets/js/jquery-3.5.1.min.js"></script>
         <script src="../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/simular.js"></script>
     </body>
 </html>
